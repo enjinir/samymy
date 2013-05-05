@@ -1,0 +1,16 @@
+@import 'reset.css';
+
+div#background-left {
+	position: absolute;
+	background: url('../resimler/background-left.png');
+	height: 100%;
+	width: 50%;
+	left: 0;
+}
+div#background-right {
+	position: absolute;
+	background: url('../resimler/background-right.png');
+	height: 100%;
+	width: 50%;
+	right: 0;
+}
