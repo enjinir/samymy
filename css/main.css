@@ -1,4 +1,7 @@
 @import 'reset.css';
+body {
+	font-family: Tahoma, Verdana, Sans-serif;
+}
 div#background-left {
 	position: fixed;
 	background: url('../resimler/background.png');
@@ -46,4 +49,25 @@ div#logo {
 }
 
 div#nav-container {
+	height: 50px;
+	border-radius: 5px;
+	background: #9043a1;
+}
+div#nav-container  ul {
+	margin-left: 280px;
+	margin-top: 5px;
+	display:inline-block;
+}
+div#nav-container  ul  li {
+	padding: 10px;
+	display:inline-block;
+}
+div#nav-container  ul li a{
+	color: #E0EF60;
+	font-weight: bold;
+	text-decoration: none;
+}
+div#nav-container  ul li a:hover{
+	color: #EEF7A6;
+	text-decoration: underline;
 }
