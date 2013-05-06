@@ -1,16 +1,49 @@
 @import 'reset.css';
-
 div#background-left {
-	position: absolute;
-	background: url('../resimler/background-left.png');
+	position: fixed;
+	background: url('../resimler/background.png');
 	height: 100%;
+	min-height: 1024px;
 	width: 50%;
+	min-width: 768px;
 	left: 0;
+	background-color: #e6ebf2;
+	z-index: -1;
 }
 div#background-right {
-	position: absolute;
-	background: url('../resimler/background-right.png');
+	position: fixed;
+	background: url('../resimler/background.png');
 	height: 100%;
 	width: 50%;
 	right: 0;
+	background-color: #eec3dd;
+	z-index: -1;
+}
+div#wrapper {
+	position: fixed;
+	margin: 2% 10%;
+	border-radius: 10px;
+	height: 96%;
+	min-height: 1024px;
+	width: 80%;
+	min-width: 768px;
+	background: #f6f6f6;
+	opacity: .9;
+}
+
+div#header {
+	height: 150px;
+	background: url('../resimler/headerbg.png');
+	background-repeat: no-repeat;
+	background-position: 270px;
+	border-radius: 10px;
+}
+
+div#logo {
+	width: 270px;
+	height: 150px;
+	background-image: url('../resimler/logo.png');
+}
+
+div#nav-container {
 }
