@@ -71,3 +71,27 @@ div#nav-container  ul li a:hover{
 	color: #EEF7A6;
 	text-decoration: underline;
 }
+div#kategoriler {
+	padding: 5px;
+	margin: 5px;
+	max-width: 270px;
+	border-radius: 10px;
+	background: #9043a1;
+}
+div#kategoriler ul {
+	padding: 5px;
+}
+div#kategoriler ul li{
+	font-size: 12pt;
+	padding: 5px;
+	display: block;
+}
+div#kategoriler ul  li a {
+	color: #E0EF60;
+	font-weight: bold;
+	text-decoration: none;
+}
+div#kategoriler ul li a:hover {
+	color: #EEF7A6;
+	text-decoration: underline;
+}
