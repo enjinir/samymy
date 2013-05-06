@@ -1,0 +1,28 @@
+@import 'reset.css';
+body {
+	padding: 25px;
+}
+div#admin-login-form {
+	position: fixed;
+	margin: 0 auto;
+}
+div#admin-login-form  h2 {
+	font-weight: bold;
+	font-family: Verdana, Arial;
+	font-size: 18pt;	
+}
+div#admin-login-form  legend{
+	font-weight: bold;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12pt;	
+}
+div#admin-login-form  fieldset{
+	border: 1px solid #cccccc;
+	padding: 20px;
+	margin: 20px;
+	width: 500px;
+}
+div#admin-login-form  table tr td{
+	padding: 5px;
+}
+
