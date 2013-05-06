@@ -1,10 +1,19 @@
 @import 'reset.css';
 body {
 	padding: 25px;
+	font-family: Tahoma, Verdana, Arial;
+	background: #f6f6f6;
 }
+
+div#container {
+	width: 40%;
+    margin: 10% auto;
+}
+
 div#admin-login-form {
+	float: center;
+	text-align: center;
 	position: fixed;
-	margin: 0 auto;
 }
 div#admin-login-form  h2 {
 	font-weight: bold;
@@ -20,9 +29,105 @@ div#admin-login-form  fieldset{
 	border: 1px solid #cccccc;
 	padding: 20px;
 	margin: 20px;
-	width: 500px;
+	width: 320px;
 }
 div#admin-login-form  table tr td{
 	padding: 5px;
 }
+div#admin-login-form  input[type=text], input[type=password]{
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #E0EF60;
+	background: #9043a1;
+	border-color: #9043a1;
+}
+div#admin-login-form  input[type=submit]{
+	border-radius: 5px;
+	color: #E0EF60;
+	background: #9043a1;
+	border-color: #9043a1;
+	float: right;
+	padding: 5px;
+	font-size: 12pt;
+}
+div#admin-login-form  input[type=submit]:hover{
+	border-radius: 5px;
+	color: #EEF7A6;
+	background: #B265C4;
+	border-color: #B265C4;
+	cursor: pointer;
+}
+div.error, div.info, div.report, div.success, div.warning {
 
+    font-family: Verdana, Arial;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    display: block;
+    margin-top:5px;
+    width: 380px;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+div.info {
+
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../resimler/info.png');
+
+
+}
+div.success {
+
+    color: #009900;
+    background-color: #C2FF99;
+    background-image: url('../resimler/success.png');
+
+}
+div.report {
+
+    color: #8D24BB;
+    background-color: #C4B2CC;
+    background-image:url('../resimler/report.png');
+
+}
+
+div.warning {
+
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../resimler/warning.png');
+
+}
+div.error  {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../resimler/error.png');
+
+}
+.info table,.info tr, .info td  {
+    border: none;
+    background-color: #BDE5F8;
+}
+.warning table,.warning tr,.warning td {
+    border: none;
+    background-color: #FEEFB3;
+}
+.error table, .error tr, .error td {
+    border: none;
+    background-color: #FFBABA;
+}
+.report table,.report tr,.report td {
+    border: none;
+    background-color: #C4B2CC;
+}
+.success table, .success tr, .success td {
+    border: none;
+    background-color: #C2FF99;
+}

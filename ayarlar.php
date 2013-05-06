@@ -9,6 +9,9 @@ define('MySQL_DATABASE','samymy');
 // Sistem Ayarlari
 define('SAMYMY_DEBUG', 1);
 
+// Sabitler
+define('PERMISSION_ADMIN', 51);
+
 if(!SAMYMY_DEBUG)
 	error_reporting(0);
 	
