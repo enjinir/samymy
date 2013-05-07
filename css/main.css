@@ -3,10 +3,10 @@ body {
 	font-family: Tahoma, Verdana, Sans-serif;
 }
 div#background-left {
-	position: fixed;
+	position: absolute;
 	background: url('../resimler/background.png');
 	height: 100%;
-	min-height: 1024px;
+	min-height: 1024px;,
 	width: 50%;
 	min-width: 768px;
 	left: 0;
@@ -14,16 +14,18 @@ div#background-left {
 	z-index: -1;
 }
 div#background-right {
-	position: fixed;
+	position: absolute;
 	background: url('../resimler/background.png');
 	height: 100%;
 	width: 50%;
 	right: 0;
 	background-color: #eec3dd;
+	height: 100%;
+	min-height: 1024px;,
 	z-index: -1;
 }
 div#wrapper {
-	position: fixed;
+	position: absolute;
 	margin: 2% 10%;
 	border-radius: 10px;
 	height: 96%;
@@ -32,19 +34,27 @@ div#wrapper {
 	min-width: 768px;
 	background: #f6f6f6;
 	opacity: .9;
-}
+	}
 div#left-container {
 	padding-top: 10px;
-	position: fixed;
+	position: absolute;
 	float: left;
 	width: 320px;
 }
 div#right-container {
 	padding-top: 10px;
-	position: fixed;
+	position: absolute;
 	float: right;
-	left: 435px;
+	left: 320px;
 	width: 725px;
+}
+div#hakkimizda {
+background: #9043a1;
+border-radius:10px;
+padding:10px;
+color:#E0EF60;
+font-weight: bold;
+width: 670px;
 }
 div#header {
 	height: 150px;
