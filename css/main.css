@@ -93,6 +93,12 @@ div#nav-container  ul li a:hover{
 	color: #EEF7A6;
 	text-decoration: underline;
 }
+div#nav-container  ul li ul {
+	left: -9999px;
+}
+div#nav-container  ul li ul:hover {
+	left: 0px;
+}
 div#kategoriler {
 	padding: 5px;
 	margin: 5px;

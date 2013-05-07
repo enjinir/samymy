@@ -93,6 +93,20 @@ div#nav-container  ul li a:hover{
 	color: #EEF7A6;
 	text-decoration: underline;
 }
+div#nav-container  ul li ul {
+	background-color: #B265C4;
+	border-bottom:1px solid #9043a1;
+	border-radius: 10px;
+	display: none;
+	position: absolute;
+	margin-left: -20px;
+}
+div#nav-container  ul li ul li {
+	display: block;
+}
+div#nav-container  ul li.parent:hover ul {
+	display: block;
+}
 div.error, div.info, div.report, div.success, div.warning {
 
     font-family: Verdana, Arial;
