@@ -1,10 +1,10 @@
 <?php
 // Veritabani Ayarlari
-define('MySQL_HOST','localhost');
+define('MySQL_HOST','samymy.com');
 define('MySQL_PORT','3306');
-define('MySQL_USERNAME','root');
-define('MySQL_PASSWORD','');
-define('MySQL_DATABASE','samymy');
+define('MySQL_USERNAME','samymy_root');
+define('MySQL_PASSWORD','reflu9191');
+define('MySQL_DATABASE','samymy_main');
 
 // Sistem Ayarlari
 define('SAMYMY_DEBUG', 1);
