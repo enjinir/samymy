@@ -31,13 +31,12 @@ if($islem == "ekle") {
 		}
 		if($hata == "") {
 			$sorgu = "INSERT INTO urunler(ad, kategori_id, resim) VALUES ('$yeniUrunAdi', $kategori, '".$_FILES["file"]["name"]."')";
+			move_uploaded_file($_FILES["file"]["tmp_name"],
+			"../resimler/" . $_FILES["file"]["name"]);
 			$sonuc = mysql_query($sorgu);
 			if(!$sonuc)
 				message("Ürün eklenemedi!", "error");
 			else {
-				$extension = substr($_FILES["file"]["name"], strrpos($_FILES["file"]["tmp_name"], "."));
-				move_uploaded_file($_FILES["file"]["tmp_name"],
-				"../resimler/" . $_FILES["file"]["name"]);
 				message("Ürün başarıyla eklendi.", "success");
 			}
 		} else {
