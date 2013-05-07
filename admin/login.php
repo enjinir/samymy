@@ -6,7 +6,7 @@ $_SESSION['title'] = 'Yönetici Girişi';
 include '../veritabani.php';
 
 if(isset($_SESSION['yetki']) && $_SESSION['yetki'] == PERMISSION_ADMIN) {
-	header('Location: index.php');
+	redirect('index.php');
 	exit;
 }
 
@@ -30,7 +30,7 @@ if(isset($_POST['submit'])) {
 		$_SESSION['kullanici_adi'] = $yetki['kullanici_adi'];
 		
 		// GO to index.php
-		header('Location: index.php');
+		redirect('index.php');
 	}
 	else {
 		message("Kullanıcı adı & şifre kombinasyonunuz yanlış!");	

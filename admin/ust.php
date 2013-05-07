@@ -1,4 +1,3 @@
-<?php include '../lib.php'; ?>
 <html>
 <head>
 <title><?php if (isset($_SESSION['title'])) echo $_SESSION['title']; else echo "Samymy!"; ?></title>
