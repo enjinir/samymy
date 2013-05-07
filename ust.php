@@ -1,4 +1,5 @@
 <?php include "veritabani.php"; ?>
+
 <html>
 <head>
 <title><?php if (isset($_SESSION['title'])) echo $_SESSION['title']; else echo "Samymy!"; ?></title>
@@ -16,8 +17,28 @@
 	<ul>
 		<li><a href="index.php">Anasayfa</a></li>
 		<li><a href="urunler.php">Ürünler</a></li>
-		<li><a href="bizkimiz.php">Biz kimiz?</a></li>
-		<li><a href="neyapariz.php">Ne yaparız?</a></li>
+		<li><a href="hakkimizda.php">Hakkımızda</a></li>
 		<li><a href="iletisim.php">İletişim</a></li>
 	</ul>
 </div>
+<div id="left-container">
+
+<?php kategorileriListele(); ?>
+
+</div>
+<div id="right-container">
+
+
+<?php
+function kategorileriListele() {
+	$sorgu = "SELECT * FROM kategoriler";
+	$sonuc = mysql_query($sorgu);
+	echo '<div id="kategoriler">';
+	echo '<ul>';
+	while($kategori = mysql_fetch_array($sonuc)) {
+		echo '<li><a href="urunler.php?kategori='.$kategori["id"].'">'.$kategori["ad"].'</a></li>';
+	}
+	echo '</ul>';
+	echo '</div>';	
+}
+?>

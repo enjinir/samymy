@@ -33,7 +33,19 @@ div#wrapper {
 	background: #f6f6f6;
 	opacity: .9;
 }
-
+div#left-container {
+	padding-top: 10px;
+	position: fixed;
+	float: left;
+	width: 320px;
+}
+div#right-container {
+	padding-top: 10px;
+	position: fixed;
+	float: right;
+	left: 435px;
+	width: 725px;
+}
 div#header {
 	height: 150px;
 	background: url('../resimler/headerbg.png');
