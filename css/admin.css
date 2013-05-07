@@ -6,10 +6,20 @@ body {
 }
 
 div#container {
+    margin: 0 auto;
+}
+div#admin-login-container {
 	width: 40%;
     margin: 10% auto;
 }
-
+h1.samymy-com {
+	color: A0AB20;
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 24pt;
+	padding: 15px;
+	margin: 5px;
+}
 div#admin-login-form {
 	float: center;
 	text-align: center;
@@ -59,10 +69,35 @@ div#admin-login-form  input[type=submit]:hover{
 	border-color: #B265C4;
 	cursor: pointer;
 }
+
+div#nav-container {
+	height: 50px;
+	border-radius: 5px;
+	background: #B265C4;
+	border: 1px solid #9043a1;
+}
+div#nav-container  ul {
+	display:inline-block;
+	margin-top: 5px;
+}
+div#nav-container  ul  li {
+	padding: 10px;
+	display:inline-block;
+}
+div#nav-container  ul li a{
+	color: #E0EF60;
+	font-weight: bold;
+	text-decoration: none;
+}
+div#nav-container  ul li a:hover{
+	color: #EEF7A6;
+	text-decoration: underline;
+}
 div.error, div.info, div.report, div.success, div.warning {
 
     font-family: Verdana, Arial;
     border: 1px solid;
+	border-radius: 10px;
     margin: 10px 0px;
     padding:15px 10px 15px 50px;
     background-repeat: no-repeat;

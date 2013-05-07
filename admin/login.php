@@ -2,20 +2,17 @@
 session_start();
 $_SESSION['title'] = 'Yönetici Girişi';
 ?>
-<html>
-<head>
-<title><?php if (isset($_SESSION['title'])) echo $_SESSION['title']; else echo "Samymy!"; ?></title>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="../css/admin.css" />
-</head>
-<body>
-<div id="container">
 <?php
 include '../veritabani.php';
 
 if(isset($_SESSION['yetki']) && $_SESSION['yetki'] == PERMISSION_ADMIN) {
 	header('Location: index.php');
 	exit;
+}
+
+include "ust.php";
+if(isset($_GET["logout"]) && $_GET["logout"]=="success") {
+	message("Çıkış işleminiz başarıyla tamamlandı.", "success");
 }
 if(isset($_POST['submit'])) {
 	$kullaniciAdi = $_POST['txtKullaniciAdi'];
@@ -36,14 +33,16 @@ if(isset($_POST['submit'])) {
 		header('Location: index.php');
 	}
 	else {
-		printError("Kullanıcı adı & şifre kombinasyonunuz yanlış!");
-		printLoginForm();
+		message("Kullanıcı adı & şifre kombinasyonunuz yanlış!");	
 	}
-} else {
-	printLoginForm();
 }
+// Print login form.
+printLoginForm();
+
+include "alt.php";
 
 function printLoginForm() { ?>
+	<div id="admin-login-container">
 	<div id="admin-login-form">
 	<h2>sAMYMy.com</h2>
 	<hr>
@@ -58,16 +57,7 @@ function printLoginForm() { ?>
 	</fieldset>
 	</form>
 	</div>
-<?php
-}
-function printError($message = "Bir hata oluştu!") {
-?>
-	<div class="error">
-	<?php echo $message; ?>
 	</div>
 <?php
 }
 ?>
-</div>
-</body>
-</html>

@@ -1,3 +1,4 @@
+<?php include 'lib.php'; ?>
 <?php include "veritabani.php"; ?>
 
 <html>
