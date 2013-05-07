@@ -100,6 +100,7 @@ div#nav-container  ul li ul {
 	display: none;
 	position: absolute;
 	margin-left: -20px;
+	z-index: 1;
 }
 div#nav-container  ul li ul li {
 	display: block;
