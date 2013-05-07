@@ -1,27 +1,25 @@
 @import 'reset.css';
 body {
 	font-family: Tahoma, Verdana, Sans-serif;
+	min-height: 1024px;
+	min-width: 768px;
 }
 div#background-left {
-	position: absolute;
+	position: fixed;
 	background: url('../resimler/background.png');
 	height: 100%;
-	min-height: 1024px;,
 	width: 50%;
-	min-width: 768px;
 	left: 0;
 	background-color: #e6ebf2;
 	z-index: -1;
 }
 div#background-right {
-	position: absolute;
+	position: fixed;
 	background: url('../resimler/background.png');
 	height: 100%;
 	width: 50%;
 	right: 0;
 	background-color: #eec3dd;
-	height: 100%;
-	min-height: 1024px;,
 	z-index: -1;
 }
 div#wrapper {
@@ -53,8 +51,29 @@ background: #9043a1;
 border-radius:10px;
 padding:10px;
 color:#E0EF60;
-font-weight: bold;
 width: 670px;
+min-height: 200px;
+
+}
+ 
+div#hakkimizda img {
+	float: right;
+	border-radius:10px;
+}
+div#iletisim {
+color:#E0EF60;
+background: #9043a1;
+border-radius:10px;
+width:670px;
+min-height:200px;
+padding:10px;
+
+}
+div#iletisim table {
+margin-left:50px;
+margin-top:20px;
+color:#E0EF60;
+
 }
 div#header {
 	height: 150px;
@@ -122,4 +141,18 @@ div#kategoriler ul  li a {
 div#kategoriler ul li a:hover {
 	color: #EEF7A6;
 	text-decoration: underline;
+}
+div#alt{
+font-weight:bold;
+color:#E0EF60;
+position: absolute;
+background:#9043a1;
+width:100%;
+border-radius:10px;
+bottom: 0px;
+text-align:center;
+padding: 10px 0;
+}
+span.copyright  {
+vertical-align: center;
 }

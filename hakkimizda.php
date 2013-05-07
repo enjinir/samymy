@@ -2,11 +2,11 @@
 // Ust kisim
 include "ust.php";
   ?>
-   <img src= "resimler\urunler\kiz_cocuk3.jpg" width="480" height="360">
-  <div id="hakkimizda">
-   <br><br>
    
-   <p><br>
+  <div id="hakkimizda">
+   
+   <img src= "resimler\urunler\kiz_cocuk3.jpg" width="240" height="180"  >
+   <p>
      En özel günlerinizde sizi yalnız bırakmayan değerli dostlarınıza,ailenize ve tüm sevdiklerinize güzel bir jest amaçlı ufak hediyeler sunmanız 
    için kurulan sAMYMy  çeşitli ürünleriyle ve uygun fiyatlarıyla sizlerle.. 
    </p>
