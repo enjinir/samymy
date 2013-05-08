@@ -10,7 +10,7 @@ $sonuc = mysql_query($sorgu);
 while($urun = mysql_fetch_array($sonuc)) {
 ?>
 <div class="urun">
-	<img class="resim" src="<?php echo "resimler/urunler/".$urun["resim"]; ?>" />
+	<img src="<?php echo "resimler/urunler/".$urun["resim"]; ?>" />
 	<span class="ad"><?php echo $urun["ad"]; ?></span>
 </div>
 <?php
