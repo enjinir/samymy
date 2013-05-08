@@ -17,7 +17,7 @@ if($islem == "ekle") {
 	if(isset($_POST["submit"])) {
 		$yeniUrunAdi = $_POST["txtUrunAdi"];
 		$kategori = $_POST["kategori"];
-		if ($_FILES["file"]["error"] > 0) {
+		if ($_FILES["resim"]["error"] > 0) {
 			$hata = "Resim yüklenemedi!";
 		}
 		$hata = "";
@@ -30,9 +30,9 @@ if($islem == "ekle") {
 			}
 		}
 		if($hata == "") {
-			$sorgu = "INSERT INTO urunler(ad, kategori_id, resim) VALUES ('$yeniUrunAdi', $kategori, '".$_FILES["file"]["name"]."')";
-			move_uploaded_file($_FILES["file"]["tmp_name"],
-			"../resimler/" . $_FILES["file"]["name"]);
+			$sorgu = "INSERT INTO urunler(ad, kategori_id, resim) VALUES ('$yeniUrunAdi', $kategori, '".$_FILES["resim"]["name"]."')";
+			move_uploaded_file($_FILES["resim"]["tmp_name"],
+			"../resimler/urunler/" . $_FILES["resim"]["name"]);
 			$sonuc = mysql_query($sorgu);
 			if(!$sonuc)
 				message("Ürün eklenemedi!", "error");

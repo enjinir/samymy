@@ -3,6 +3,7 @@ session_start();
 $_SESSION['title'] = 'Yönetici Girişi';
 ?>
 <?php
+include '../lib.php';
 include '../veritabani.php';
 
 if(isset($_SESSION['yetki']) && $_SESSION['yetki'] == PERMISSION_ADMIN) {

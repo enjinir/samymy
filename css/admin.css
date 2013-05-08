@@ -4,7 +4,11 @@ body {
 	font-family: Tahoma, Verdana, Arial;
 	background: #f6f6f6;
 }
-
+div#logo {
+	width: 270px;
+	height: 150px;
+	background-image: url('../resimler/logo.png');
+}
 div#container {
     margin: 0 auto;
 }

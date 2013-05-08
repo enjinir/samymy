@@ -6,3 +6,5 @@
 </head>
 <body>
 <div id="container">
+<div id="logo"></div>
+<h1 class="samymy-com">Yönetici Paneli</h1>
