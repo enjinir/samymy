@@ -6,6 +6,10 @@
 <title><?php if (isset($_SESSION['title'])) echo $_SESSION['title']; else echo "Samymy!"; ?></title>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="css/main.css" >
+<link rel="stylesheet" href="css/orbit.css">
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="js/jquery.orbit.js" type="text/javascript"></script>
+
 </head>
 <body>
 <div id="background-left"></div>
